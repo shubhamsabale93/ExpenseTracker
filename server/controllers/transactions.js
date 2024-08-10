@@ -1,4 +1,4 @@
-import Transaction from '../models/transactions.js'
+import Transaction from '../models/Transactions.js'
 import User from '../models/user.js';
 
 const postTransaction = async (req, res) => {
