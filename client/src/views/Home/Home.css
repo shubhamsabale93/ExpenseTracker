@@ -1,0 +1,64 @@
+.home-greeting{
+    color: tomato;
+    margin:0;
+    font-size: 25px;
+}
+.home-heading{
+    color: purple;
+    margin: 0;
+    font-size: 18px;
+}
+.home-logout{
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.home-logout:hover{
+    background-color: peru;
+}
+.net-transactions-values{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+}
+.net-transactions-value-item{
+    border: 2px solid purple;
+    width: 200px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 10px;
+   
+}
+.net-transactions-value-amount{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.net-transactions-value-title{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+
+}
+.transactions-container{
+    height: 300px;
+    overflow: scroll;
+}
+.add-transaction{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: tomato;
+    border-radius: 5px;
+    border: 2px double;
+}
