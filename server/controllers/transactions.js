@@ -1,5 +1,5 @@
 import Transaction from '../models/Transactions.js'
-import User from '../models/user.js';
+import User from '../models/User.js';
 
 const postTransaction = async (req, res) => {
   const { title, amount, category, type, user } = req.body;

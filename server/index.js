@@ -40,7 +40,7 @@ app.get("/transactions", getTransactions)
 app.delete("/transaction/:id", deleteTransaction)
 
 
-const PORT=5000;
+const PORT=process.env.PORT || 5000;
 
 app.listen(PORT,()=>{
     console.log(`The Sever is running on ${PORT}`)
