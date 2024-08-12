@@ -36,7 +36,7 @@ function Home() {
     toast.dismiss()
 
     setTransactions(allTransactions)
-  }
+}
 
   useEffect(() => {
     loadTransactions()

@@ -10,8 +10,13 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 
-import {postSignup, postLogin} from "./controllers/user.js";
-import { postTransaction, getTransactions, deleteTransaction } from "./controllers/Transactions.js";
+
+
+import {postSignup, postLogin} from "./controllers/user.js"
+
+
+import {postTransaction,getTransactions,deleteTransaction } from "./controllers/transactions.js"
+
 
 const connectDB=async()=>{
     const conn= await mongoose.connect(process.env.MongoDB_URL)
@@ -21,7 +26,7 @@ const connectDB=async()=>{
         console.log(`Check your connectivity📞`)
     }
 }
-connectDB()
+connectDB();
 
 
 
@@ -40,7 +45,7 @@ app.get("/transactions", getTransactions)
 app.delete("/transaction/:id", deleteTransaction)
 
 
-const PORT=process.env.PORT || 5000;
+const PORT=7000
 
 app.listen(PORT,()=>{
     console.log(`The Sever is running on ${PORT}`)
