@@ -14,7 +14,7 @@ function Signup() {
   })
 
   const signup = async () => {
-    const response = await axios.post(`http://localhost:5000/signup`, {
+    const response = await axios.post(`${process.env.REACT_APP_URL}/signup`, {
       fullName: user.fullName,
       email: user.email,
       password: user.password,
